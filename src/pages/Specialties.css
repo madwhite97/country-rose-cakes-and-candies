@@ -1,0 +1,602 @@
+/* =========================================================
+   SPECIALTIES PAGE
+   Country Rose Cakes & Candy
+========================================================= */
+
+.specialties-page {
+    min-height: 100vh;
+    background: #fff8ef;
+    color: #4a2f2a;
+}
+
+/* =========================================================
+   SHARED
+========================================================= */
+
+.specialties-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.specialties-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 35px 0 75px;
+    background:
+        radial-gradient(
+            circle at 8% 35%,
+            rgba(224, 158, 168, 0.16),
+            transparent 24%
+        ),
+        radial-gradient(
+            circle at 92% 65%,
+            rgba(166, 205, 187, 0.16),
+            transparent 24%
+        ),
+        #fff8ef;
+}
+
+.specialties-hero::before,
+.specialties-hero::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(168, 93, 103, 0.12);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.specialties-hero::before {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    right: -100px;
+}
+
+.specialties-hero::after {
+    width: 340px;
+    height: 340px;
+    bottom: -180px;
+    left: -150px;
+}
+
+.back-home-button {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 15px;
+    border: 1px solid #dec4bd;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.7);
+    color: #705851;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+
+.back-home-button:hover {
+    border-color: #a85d67;
+    background: #a85d67;
+    color: white;
+    transform: translateX(-2px);
+}
+
+.specialties-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 55px auto 0;
+    text-align: center;
+}
+
+.specialties-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    color: #a85d67;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.78rem;
+    font-style: italic;
+}
+
+.specialties-eyebrow > span:first-child,
+.specialties-eyebrow > span:last-child {
+    width: 45px;
+    height: 1px;
+    background: #d9a5ab;
+}
+
+.specialties-hero h1 {
+    margin: 16px 0 0;
+    color: #4a2f2a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+.specialties-hero-content > p {
+    max-width: 650px;
+    margin: 22px auto 0;
+    color: #705851;
+    font-size: 0.98rem;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   CATEGORY NAVIGATION
+========================================================= */
+
+.specialties-nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 17px 0;
+    border-top: 1px solid #eadbd2;
+    border-bottom: 1px solid #eadbd2;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 5px 20px rgba(74, 47, 42, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.specialties-nav-label {
+    margin: 0 0 11px;
+    color: #a85d67;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.specialties-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.specialties-nav-links a {
+    padding: 8px 14px;
+    border: 1px solid #ead7d2;
+    border-radius: 999px;
+    background: #fffaf6;
+    color: #705851;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.specialties-nav-links a:hover {
+    border-color: #a85d67;
+    background: #a85d67;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+/* =========================================================
+   CATEGORY SECTIONS
+========================================================= */
+
+.specialty-category {
+    position: relative;
+    padding: 80px 0 85px;
+    border-bottom: 1px solid rgba(168, 93, 103, 0.1);
+}
+
+.specialty-category-pink {
+    background: #fdf0ed;
+}
+
+.specialty-category-cream {
+    background: #fff8ef;
+}
+
+.specialty-heading {
+    max-width: 720px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.specialty-eyebrow {
+    margin: 0 0 9px;
+    color: #a85d67;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.specialty-heading h2 {
+    margin: 0;
+    color: #4a2f2a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.3rem, 5vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1.05;
+}
+
+.specialty-heading-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin: 15px 0;
+    color: #a85d67;
+}
+
+.specialty-heading-line span {
+    width: 42px;
+    height: 1px;
+    background: #d9a5ab;
+}
+
+.specialty-description {
+    max-width: 620px;
+    margin: 0 auto;
+    color: #705851;
+    font-size: 0.92rem;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   SPECIALTY GRID
+========================================================= */
+
+.specialty-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.specialty-card {
+    min-width: 0;
+}
+
+.specialty-card-inner {
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid rgba(168, 93, 103, 0.13);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow:
+        0 5px 18px rgba(74, 47, 42, 0.07),
+        0 1px 3px rgba(74, 47, 42, 0.04);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.specialty-card:hover .specialty-card-inner {
+    transform: translateY(-6px);
+    box-shadow:
+        0 16px 34px rgba(74, 47, 42, 0.12),
+        0 3px 8px rgba(74, 47, 42, 0.04);
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.specialty-image-wrap {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #f3e7df;
+}
+
+.specialty-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.specialty-card:hover .specialty-image {
+    transform: scale(1.05);
+}
+
+.specialty-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(74, 47, 42, 0.22),
+        transparent 45%
+    );
+    pointer-events: none;
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.specialty-card-content {
+    padding: 15px 16px 17px;
+}
+
+.specialty-card-content h3 {
+    min-height: 42px;
+    margin: 0;
+    color: #4a2f2a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.specialty-order-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    color: #a85d67;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: gap 0.2s ease;
+}
+
+.specialty-order-link:hover {
+    gap: 10px;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.specialties-cta {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 25px;
+    background: #f1ddd5;
+    text-align: center;
+}
+
+.specialties-cta::before,
+.specialties-cta::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(168, 93, 103, 0.13);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.specialties-cta::before {
+    width: 310px;
+    height: 310px;
+    top: -150px;
+    left: -100px;
+}
+
+.specialties-cta::after {
+    width: 350px;
+    height: 350px;
+    right: -120px;
+    bottom: -170px;
+}
+
+.specialties-cta-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.specialties-cta-eyebrow {
+    margin: 0 0 12px;
+    color: #a85d67;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.specialties-cta h2 {
+    margin: 0 0 18px;
+    color: #4a2f2a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    font-weight: 600;
+    line-height: 1.05;
+}
+
+.specialties-cta h2 span {
+    color: #a85d67;
+    font-style: italic;
+}
+
+.specialties-cta p {
+    max-width: 570px;
+    margin: 0 auto;
+    color: #705851;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.specialties-cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 28px;
+    padding: 14px 23px;
+    border: 1px solid #a85d67;
+    border-radius: 999px;
+    background: #a85d67;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 8px 20px rgba(168, 93, 103, 0.2);
+    transition: 0.2s ease;
+}
+
+.specialties-cta-button:hover {
+    background: #8f4c57;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(168, 93, 103, 0.27);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+    .specialty-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+    .specialties-container {
+        width: min(100% - 28px, 1180px);
+    }
+
+    .specialties-hero {
+        padding: 25px 0 60px;
+    }
+
+    .specialties-hero-content {
+        margin-top: 45px;
+    }
+
+    .specialties-hero h1 {
+        font-size: 3rem;
+    }
+
+    .specialties-hero-content > p {
+        font-size: 0.88rem;
+        line-height: 1.7;
+    }
+
+    .specialties-eyebrow {
+        font-size: 0.7rem;
+    }
+
+    .specialties-eyebrow > span:first-child,
+    .specialties-eyebrow > span:last-child {
+        width: 28px;
+    }
+
+    .specialties-nav {
+        position: relative;
+        padding: 17px 0;
+    }
+
+    .specialties-nav-links {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 3px;
+        scrollbar-width: none;
+    }
+
+    .specialties-nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .specialties-nav-links a {
+        flex: 0 0 auto;
+    }
+
+    .specialty-category {
+        padding: 60px 0 65px;
+    }
+
+    .specialty-heading {
+        margin-bottom: 30px;
+    }
+
+    .specialty-heading h2 {
+        font-size: 2.3rem;
+    }
+
+    .specialty-description {
+        font-size: 0.86rem;
+        line-height: 1.7;
+    }
+
+    .specialty-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .specialty-card-content {
+        padding: 11px 11px 13px;
+    }
+
+    .specialty-card-content h3 {
+        min-height: 38px;
+        font-size: 0.8rem;
+    }
+
+    .specialty-order-link {
+        margin-top: 8px;
+        font-size: 0.58rem;
+    }
+
+    .specialties-cta {
+        padding: 70px 20px;
+    }
+
+    .specialties-cta-eyebrow {
+        font-size: 1.15rem;
+    }
+
+    .specialties-cta h2 {
+        font-size: 2.35rem;
+    }
+
+    .specialties-cta p {
+        font-size: 0.87rem;
+    }
+}
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 420px) {
+    .specialty-grid {
+        gap: 9px;
+    }
+
+    .specialty-card-content h3 {
+        font-size: 0.74rem;
+    }
+
+    .specialty-order-link {
+        letter-spacing: 0.07em;
+    }
+
+    .specialties-hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .specialty-heading h2 {
+        font-size: 2.1rem;
+    }
+}
