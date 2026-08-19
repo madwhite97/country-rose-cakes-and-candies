@@ -3129,3 +3129,794 @@ button {
     font-size: 0.95rem;
   }
 }
+
+/* =====================
+  FINAL MOBILE POLISH
+  Country Rose Cakes & Candy
+==================== */
+
+@media (max-width: 600px) {
+
+  /* ====================
+    GLOBAL MOBILE
+  ==================== */
+
+  .container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .hero,
+  .about,
+  .goodies,
+  .order-cta,
+  .contact {
+    overflow: hidden;
+  }
+
+  /* ====================
+    HERO
+  ==================== */
+
+  .hero {
+    padding: 55px 0 80px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 6;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-sticker {
+    margin-bottom: 15px;
+  }
+
+  .hero h1 {
+    font-size: clam(2.8rem, 13vw, 4rem);
+    line-height: 0.92;
+    margin-bottom: 20px
+  }
+
+  .hero-description {
+    max-width: 340px;
+    margin: 0 auto 25px;
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-button {
+    width: 100%;
+  }
+
+  .hero-art {
+    width: 100%;
+    min-height: 350px;
+    height: 350px;
+    margin-top: 5px;
+  }
+
+  .hero-photo {
+    inset: 20px 18px 30px;
+    padding: 10px;
+  }
+
+  .hero-photo img {
+    min-height: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-photo-placeholder {
+    min-height: 0;
+  }
+
+  .hero-note-top {
+    top: 0;
+    right: 0;
+    max-width: 150px;
+    padding: 8px 11px;
+    font-size: 0.62rem;
+    z-index: 7;
+  }
+
+  .hero-note-bottom {
+    left: 0;
+    bottom: 0;
+    max-width: 145px;
+    padding: 8px 12px;
+    z-index: 7;
+  }
+
+  .hero-note-bottom span {
+    font-size: 1.25rem;
+  }
+
+  .hero-note-bottom strong {
+    font-size: 1rem;
+  }
+
+  .flower-one {
+    left: 0;
+    bottom: 25px;
+    font-size: 2.2rem;
+    z-index: 6;
+  }
+
+  .flower-two {
+    right: 0;
+    top: 35px;
+    font-size: 2.2rem;
+    z-index: 6;
+  }
+
+  .hero-photo-caption {
+    right: 12px;
+    bottom: 15px;
+    padding: 7px 10px;
+    z-index: 7;
+  }
+
+  .hero-photo-caption .script {
+    font-size: 1.1rem;
+  }
+
+  .hero-photo-caption small {
+    font-size: 0.48rem;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  /* ====================
+    ABOUT
+  ==================== */
+
+  .about {
+    padding: 70px 0 95px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-photos {
+    width: 100%;
+    max-width: 360px;
+    min-height: 380px;
+    height: 380px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .about-photo-main {
+    width: 76%;
+    height: 315px;
+    top: 0;
+    left: 0;
+  }
+
+  .about-photo-small {
+    width: 48%;
+    height: 145px;
+    right: 0;
+    bottom: 5px;
+  }
+
+  .about-note {
+    top: 18px;
+    right: -3px;
+    max-width: 150px;
+    z-index: 6;
+  }
+
+  .about-badge {
+    top: auto !important;
+    right: 3px;
+    bottom: 15px;
+    width: 112px;
+    height: 112px;
+    padding: 12px;
+    z-index: 7;
+  }
+
+  .about-badge strong {
+    font-size: 1.25rem;
+  }
+
+  .about-badge span {
+    font-size: 0.4rem;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .about-content h2 {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+    line-height: 0.95;
+  }
+
+  .about-values {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .about-button {
+    width: 100%;
+  }
+
+  /* =====================
+    GOODIES
+  ==================== */
+
+  .goodies {
+    padding: 65px 0 70px;
+  }
+
+  .goodies-heading {
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .goodies-heading h2 {
+    font-size: clamp(3rem, 13vw, 4rem);
+  }
+
+  .goodies-bow {
+    bottom: -24px;
+  }
+
+  .goodies-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px 10px;
+    max-width: 330px;
+    margin: 30px auto 40px;
+    text-align: center;
+  }
+
+  .goodies-categories a {
+    font-size: 0.66rem;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+  }
+
+  .goodies-categories span {
+    font-size: 0.55rem;
+  }
+
+  .goodies-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .goodies-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    row-gap: 28px;
+  }
+
+  .goodie-card {
+    min-width: 0;
+    padding: 9px 9px 14px;
+  }
+
+  .goodie-card-1 {
+    transform: rotate(-1.5deg);
+  }
+
+  .goodie-card-2 {
+    transform: rotate(1.5deg);
+  }
+
+  .goodie-card-3 {
+    transform: rotate(-1deg);
+  }
+
+  .goodie-card-4 {
+    transform: rotate(1deg);
+  }
+
+  .goodie-card-5 {
+    transform: rotate(-1deg);
+  }
+
+  .goodie-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .goodie-label {
+    font-size: 0.7rem;
+  }
+
+  .goodies-note {
+    width: 100%;;
+    max-width: 280px;
+    margin: 5px auto 0;
+  }
+
+  .goodies-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .goodies-bottom p {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .goodies-bottom a {
+    width: 100%;
+  }
+
+  /* ====================
+    ORDER CTA
+  ==================== */
+
+  .order-cta {
+    padding: 75px 0 90px;
+  }
+
+  .order-cta-container {
+    min-height: 0;
+  }
+
+  .order-cta-content {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .order-cta h2 {
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(2.7rem, 12vw, 3.5rem);
+    line-height: 0.95;
+  }
+
+  .order-cta-content > p {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .order-cta-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .order-cta-primary,
+  .order-cta-secondary {
+    width: 100%;
+  }
+
+  .order-cta-badge {
+    top: auto !important;
+    right: 8px;
+    bottom: 18px;
+    width: 88px;
+    height: 88px;
+    padding: 9px;
+    z-index: 4;
+  }
+
+  .order-cta-badge strong {
+    font-size: 1.15rem;
+  }
+
+  .order-cta-badge span {
+    font-size: 0.4rem;
+  }
+
+  .order-cta-decoration-left {
+    left: -12px;
+    top: 45%;
+    font-size: 2.8rem;
+  }
+
+  .order-cta-decoration-right {
+    right: -12px;
+    bottom: 18%;
+    font-size: 2.8rem;
+  }
+
+  /* ==============================
+    CONTACT / ORDER FORM
+  ============================== */
+
+  .contact {
+    padding: 75px 0 50px;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-info h2 {
+    font-size: clamp(2.7rem, 12vw, 3.8rem);
+  }
+
+  .contact-intro {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .contact-details {
+    gap: 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 100%;;
+  }
+
+  /* ====================
+    EXTRA SMALL PHONES
+  ==================== */
+
+  @media (max-width: 430px) {
+
+    .hero {
+      padding-top: 45px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+    }
+
+    .hero-art {
+      min-height: 325px;
+      height: 325px;
+    }
+
+    .hero-photo {
+      inset: 18px 12px 25px;
+    }
+
+    .hero-note-top {
+      right: -2px;
+      max-width: 130px;
+      font-size: 0.55rem;
+    }
+
+    .hero-note-bottom {
+      left: -2px;
+      max-width: 130px;
+      font-size: 0.55rem;
+    }
+
+    .about-photos {
+      min-height: 350px;
+      height: 350px;
+    }
+
+    .about-photo-main {
+      height: 285px;
+    }
+
+    .about-photo-small {
+      height: 125px;
+    }
+
+    .about-badge {
+      width: 100px;
+      height: 100px;
+    }
+
+    .goodies-grid {
+      gap: 15px;
+      row-gap: 24px;
+    }
+
+    .goodie-card {
+      padding: 8px
+    }
+
+    .goodie-card-1 {
+      transform: rotate(-1.5deg);
+    }
+
+    .goodie-card-2 {
+      transform: rotate(1.5deg);
+    }
+
+    .goodie-card-3 {
+      transform: rotate(-1deg);
+    }
+
+    .goodie-card-4 {
+      transform: rotate(1deg);
+    }
+
+    .goodie-card-5 {
+      grid-column: 1 / -1;
+      width: calc(50% - 9px);
+      justify-self: center;
+      transform: rotate(-1deg);
+    }
+
+    .goodie-tape {
+      top: -10px;
+      width: 52px;
+      height: 20px;
+    }
+
+    .goodie-photo {
+      aspect-ratio: 1 / 1;
+    }
+
+    .goodie-label {
+      font-size: 0.72rem;
+      padding: 9px 5px;
+    }
+
+    .goodies-note {
+      width: 100%;
+      max-width: 290px;
+      margin: 0 auto;
+    }
+
+    .goodies-bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    .goodies-button p {
+      margin: 0;
+    }
+
+    .goodies-bottom a {
+      width: 100%;
+    }
+
+    .order-cta {
+      padding: 75px 0 90px;
+      overflow: hidden;
+    }
+
+    .order-cta-container {
+      min-height: 0;
+    }
+
+    .order-cta-content {
+      position: relative;
+      z-index: 4;
+      max-width: 100%;
+      padding: 0 5px;
+    }
+
+    .order-cta h2 {
+      font-size: clamp(2.7rem, 12vw, 3.6rem);
+      line-height: 0.95;
+    }
+
+    .order-cta-content > p {
+      max-width: 330px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .order-cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .order-cta-primary,
+    .order-cta-secondary {
+      width: 100%;
+    }
+
+    .order-cta-badge {
+      top: auto;
+      right: 8px;
+      bottom: 15px;
+      width: 88px;
+      height: 88px;
+      padding: 9px;
+    }
+
+    .order-cta-badge strong {
+      font-size: 1.15rem;
+    }
+
+    .order-cta-badge span {
+      font-size: 0.4rem;
+    }
+
+    .order-cta-decoration {
+      font-size: 2.8rem;
+    }
+
+    .order-cta-decoration-left {
+      left: -8px;
+      top: 38%;
+    }
+
+    .order-cta-decoration-right {
+      right: -8px;
+      bottom: 20%;
+    }
+
+    .contact {
+      padding: 75px 0 50px;
+      overflow: hidden;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .contact-info {
+      width: 100%;
+    }
+
+    .contact-info h2 {
+      font-size: clamp(2.7rem, 12vw, 4rem);
+    }
+
+    .contact-intro {
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .contact-details {
+      margin-top: 25px;
+    }
+
+    .contact-form {
+      width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .contact-form textarea {
+      min-height: 180px;
+    }
+
+    .contact-submit,
+    .contact-form button {
+      width: 100%;
+    }
+
+    @media (max-width: 430px) {
+      .hero {
+        padding-top: 45px;
+      }
+
+      .hero h1 {
+        font-size: 2.85rem;
+      }
+
+      .hero-art {
+        min-height: 350px;
+      }
+
+      .hero-photo {
+        inset: 18px 12px 28px;
+      }
+
+      .hero-note-top {
+        right: 0;
+        max-width: 135px;
+        font-size: 0.57rem;
+      }
+
+      .hero-note-bottom {
+        left: 0;
+      }
+
+      .about-photos {
+        min-height: 375px;
+      }
+
+      .about-photo-main {
+        height: 325px;
+      }
+
+      .about-photo-small {
+        height: 140px;
+      }
+
+      .about-badge {
+        width: 100px;
+        height: 100px;
+        bottom: 18px;
+      }
+
+      .about-badge strong {
+        font-size: 1.1rem;
+      }
+
+      .goodies {
+        padding-top: 60px;
+      }
+
+      .goodies-grid {
+        gap: 22px 14px;
+      }
+
+      .goodie-card {
+        padding: 8px 8px 12px;
+      }
+
+      .goodie-label {
+        font-size: 0.65rem;
+      }
+
+      .goodie-card-5 {
+        width: calc(50% - 7px);
+      }
+
+      .order-cta {
+        padding-top: 65px;
+      }
+
+      .order-cta-badge {
+        width: 78px;
+        height: 78px;
+        right: 4px;
+      }
+
+      .order-cta-badge strong {
+        font-size: 1rem;
+      }
+    }
+  }
+}
