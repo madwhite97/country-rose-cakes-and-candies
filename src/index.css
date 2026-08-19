@@ -2694,3 +2694,438 @@ button {
     left: -5px;
   }
 }
+
+/* ====================
+  FINAL MOBILE POLISH
+==================== */
+
+@media (max-width: 600px) {
+
+  /* ====================
+    HERO
+  ==================== */
+
+  .hero {
+    padding: 55px 0 85px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 6;
+  }
+
+  .hero-h1 {
+    position: relative;
+    z-index: 6;
+    font-size: clamp(2.8rem, 13vw, 2.5rem);
+    line-height: 0.98;
+  }
+
+  .hero-description {
+    position: relative;
+    z-index: 6;
+    max-width: 350px;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin: 22px auto;
+  }
+
+  .hero-buttons {
+    position: relative;
+    z-index: 6;
+  }
+
+  .hero-art {
+    min-height: 330px;
+  }
+
+  .hero-note-top {
+    top: 5x;
+    right: 4px;
+    padding: 7px 10px;
+    font-size: 0.58rem;
+  }
+
+  .hero-note-bottom {
+    left: 0;
+    bottom: 0;
+    padding: 8px 12px;
+  }
+
+  .heo-note-bottom span {
+    font-size: 1.25rem;
+  }
+
+  .hero-note-bottom strong {
+    font-size: 1rem;
+  }
+
+  .hero-flower {
+    font-size: 2.1rem;
+  }
+
+  .flower-one {
+    left: -8px;
+    top: 105px;
+  }
+
+  .flower-two {
+    right: -4px;
+    bottom: 60px;
+  }
+
+  /* ====================
+    GOODIES
+  ==================== */
+
+  .goodies {
+    padding: 65px 0 60px;
+  }
+
+  .goodies-heading {
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .goodies-heading h2 {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+  }
+
+  .heading-decoration {
+    transform: scale(0.8);
+  }
+
+  .goodies-bow {
+    bottom: -24px;
+    font-size: 1.35rem;
+  }
+
+  .goodies-categories {
+    max-width: 340px;
+    margin: 38px auto 42px;
+    gap: 8px 10px;
+    line-height: 1.4;
+  }
+
+  .goodies-categories a {
+    font-size: 0.68rem;
+    white-space: nowrap;
+  }
+
+  .goodies-categories span {
+    font-size: 0.55rem;
+  }
+
+  .goodies-grid {
+    gap: 20px;
+  }
+
+  .goodie-card {
+    padding: 9px 9px 15px;
+  }
+
+  .goodie-label {
+    font-size: 0.92rem;
+    padding: 6px 10px;
+  }
+
+  /* ====================
+    ABOUT
+  ==================== */
+
+  .about {
+    padding: 70px 0 90px;
+  }
+
+  .about-container {
+    gap: 45px;
+  }
+
+  .about-photos {
+    min-height: 380px;
+    width: calc(100% - 10px);
+    max-width: 360px;
+  }
+
+  .about-photo-main {
+    width: 76%;
+    height: 335px;
+    top: 5px;
+    left: 3%;
+  }
+
+  .about-photo-small {
+    width: 42%;
+    height: 135px;
+    right: 0;
+    bottom: 10px;
+  }
+
+  .about-note {
+    top: 18px;
+    right: -3px;
+    padding: 7px 10px;
+    font-size: 0.55rem;
+    letter-spacing: 0.06em;
+  }
+
+  .about-badge {
+    top: auto;
+    right: -2px;
+    bottom: 18px;
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+    border-width: 2px;
+    box-shadow: 4px 4px 0 var(--brown);
+  }
+
+  .about-badge span {
+    font-size: 0.38rem;
+  }
+
+  .about-badge strong {
+    margin: 3px 0;
+    font-size: 1.15rem;
+  }
+
+  .about-flower {
+    font-size: 2rem;
+  }
+
+  .about-flower-one {
+    left: -5px;
+    top: 48%;
+  }
+
+  .about-flower-two {
+    right: -3px;
+    top: 5%;
+  }
+
+  .about-content {
+    padding: 10px 0;
+  }
+
+  .about-content h2 {
+    font-size: clamp(2.5rem, 11vw, 3.5rem);
+    line-height: 0.98;
+  }
+
+  .about-content h2 .script {
+    font-size: 1em;
+  }
+
+  .about-divider {
+    width: 160px;
+    margin: 20px auto;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .about-content .about-lead {
+    font-size: 1.08rem;
+    line-height: 1.5;
+  }
+
+  /* ====================
+    ORDER CTA
+  ==================== */
+
+  .order-cta {
+    padding: 85px 0 90px;
+  }
+
+  .order-cta-container {
+    min-height: 440px;
+    padding: 65px 0 30px;
+  }
+
+  .order-cta-content {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .order-cta h2 {
+    font-size: clamp(2.7rem, 12vw, 3.5rem);
+    line-height: 0.98;
+  }
+
+  .order-cta-content > p {
+    max-width: 340px;
+    margin: 20px auto 25px;
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .order-cta-badge {
+    top: 5px;
+    right: 6px;
+    width: 82px;
+    height: 82px;
+    padding: 8px;
+    border-width: 2px;
+    box-shadow: 3px 3px 0 var(--brown);
+  }
+
+  .order-cta-badge strong {
+    font-size: 1.05rem;
+  }
+
+  .order-cta-badge span {
+    font-size: 0.36rem;
+  }
+
+  .order-cta-badge svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .order-cta-decoration {
+    font-size: 2.4rem;
+    z-index: 1;
+  }
+
+  .order-cta-decoration-left {
+    left: -5px;
+    top: 25%;
+  }j
+
+  .order-cta-decoration-right {
+    right: -5px;
+    bottom: 18%;
+  }
+
+  .order-cta-buttons {
+    position: relative;
+    z-index: 6;
+  }
+
+  /* ====================
+    CONTACT FORM
+  ==================== */
+
+  .contact {
+    padding: 65px 0 45px;
+  }
+
+  .contact-form-wrapper {
+    width: calc(100% - 4px);
+  }
+
+  .contact-form {
+    padding: 30px 18px 24px;
+  }
+
+  .form-header .script {
+    font-size: 1.75rem;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form tesxtarea {
+    padding: 13px 12px;
+    font-size: 0.82rem;
+  }
+
+  .contact-form textarea {
+    min-height: 130px;
+  }
+
+  /* ====================
+    FOOTER
+  ==================== */
+
+  .footer-container {
+    gap: 32px 18px;
+  }
+
+  .footer-links a {
+    font-size: 0.68rem;
+  }
+
+  .footer-order {
+    padding: 22px 18px;
+  }
+}
+
+/* ====================
+  EXTRA SMALL PHONES
+==================== */
+
+@media (max-width: 380px) {
+
+  .hero h1 {
+    font-size: 2.65rem;
+  }
+
+  .hero-description {
+    font-size: 0.86rem;
+  }
+
+  .hero-note-top {
+    transform: rotate(3deg) scale(0.9);
+    transform-origin: top right;
+  }
+
+  .hero-note-bottom {
+    transform: rotate(-4deg) scale(0.9);
+    transform-origin: bottom left;
+  }
+
+  .goodies-heading h2 {
+    font-size: 2.75rem;
+  }
+
+  .goodies-categories {
+    max-width: 300px;
+  }
+
+  .goodies-categories a {
+    font-size: 0.62rem;
+  }
+
+  .about-photos {
+    min-height: 350px;
+  }
+
+  .about-photo-main {
+    height: 305px;
+  }
+
+  .about-photo-small {
+    height: 120px;
+  }
+
+  .about-badge {
+    width: 88px;
+    height: 88px;
+  }
+
+  .about-badge strong {
+    font-size: 1rem;
+  }
+
+  .ordder-cta-container {
+    min-height: 420px;
+    padding-top: 70px;
+  }
+
+  .order-cta h2 {
+    font-size: 2.65rem;
+  }
+
+  .order-cta-badge {
+    width: 72px;
+    height: 72px;
+  }
+
+  .order-cta-badge strong {
+    font-size: 0.95rem;
+  }
+}
