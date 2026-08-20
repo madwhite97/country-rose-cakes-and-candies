@@ -4048,3 +4048,125 @@ button {
     touch-action: manipulation;
   }
 }
+
+/* ==========================================
+  MOBILE CTA + DATE FIELD FINAL FIX
+========================================== */
+
+@media (max-width: 600px) {
+
+  .order-cta {
+    padding: 65px 0 70px;
+  }
+
+  .order-cta-container {
+    min-height: 360px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .order-cta-content {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .order-cta-badge {
+    top: auto;
+    right: 4px;
+    bottom: 0;
+    width: 78px;
+    height: 78px;
+    padding: 8px;
+    z-index: 2;
+  }
+
+  .order-cta-badge strong {
+    font-size: 0.95rem;
+    line-height: 0.9;
+  }
+
+  .order-cta-badge span {
+    font-size: 0.37rem;
+    letter-spacing: 0.09em;
+  }
+
+  .order-cta-badge svg {
+    width: 11px;
+    height: 11px;
+    margin-bottom: 3px;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: visible;
+  }
+
+  .contact-form .form-group,
+  .contact-form label {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .order-cta {
+    padding: 55px 0 60px;
+  }
+
+  .order-cta-container {
+    min-height: 335px;
+  }
+
+  .order-cta-badge {
+    width: 68px;
+    height: 68px;
+    right: 2px;
+    bottom: 0;
+    padding: 7px;
+  }
+
+  .order-cta-badge strong {
+    font-size: 0.82rem;
+  }
+
+  .order-cta-badge span {
+    font-size: 0.32rem;
+  }
+
+  .order-cta-badge svg {
+    width: 9px;
+    height: 9px;
+  }
+
+  .contact-form input[type="date"] {
+    padding-left: 14px;
+    padding-right: 10px;
+  }
+}
