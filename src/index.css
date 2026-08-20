@@ -2124,18 +2124,20 @@ img {
   }
 
   .hero {
-    min-height: 0;
-    padding: 55px 0 85px;
+    min-height: auto;
+    padding: 65px 0 85px;
   }
 
   .hero-container {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    align-items: center;
+    gap: 32px;
   }
 
   .hero-content {
     width: 100%;
+    max-width: 520px;
     text-align: center;
   }
 
@@ -2143,8 +2145,13 @@ img {
     margin-bottom: 15px;
   }
 
+  .hero-kicker {
+    font-size: 0.72rem;
+    margin-bottom: 8px;
+  }
+
   .hero h1 {
-    font-size: clamp(2.8rem, 12vw, 4rem);
+    font-size: clamp(2.75rem, 12vw, 4rem);
     line-height: 0.94;
   }
 
@@ -2156,7 +2163,9 @@ img {
   }
 
   .hero-buttons {
-    width: 100%;
+    width: 100;
+    max-width: 420px;
+    margin-inline: auto;
     flex-direction: column;
     gap: 12px;
   }
@@ -2167,9 +2176,10 @@ img {
 
   .hero-art {
     width: 100%;
-    height: 350px;
-    min-height: 350px;
-    margin-top: 5px;
+    max-width: 520px;
+    height: 360px;
+    min-height: 360px;
+    margin: 5px auto 0;
   }
 
   .hero-photo {
@@ -2525,14 +2535,50 @@ img {
   }
 
   .contact-details {
+    width: 100%;
+    max-width: 330px;
+    margin: 25px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .contact-detail {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
     align-items: center;
-    gap: 10px;
-    margin-top: 25px;
+    gap: 13px;
+    text-align: left;
+  }
+
+  .contact-detail > span:last-child {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .contact-detail strong,
+  .contact-detail small {
+    display: block;
   }
 
   .contact-mini-note {
-    margin-inline: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto 0;
+    padding: 15px 16px;
     text-align: left;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    transform: rotate(-0.5deg);
+  }
+
+  .contact-mini-note .script {
+    font-size: 1.05rem;
+    line-height: 1.25;
   }
 
   .contact-form-wrapper {
@@ -2658,7 +2704,7 @@ img {
   }
 
   .hero {
-    padding: 45px 0 75px;
+    padding-top: 55px;
   }
 
   .hero h1 {
@@ -2670,8 +2716,8 @@ img {
   }
 
   .hero-art {
-    height: 325px;
-    min-height: 325px;
+    height: 330px;
+    min-height: 330px;
   }
 
   .hero-photo {
@@ -2789,6 +2835,14 @@ img {
 
   .contact-form textarea {
     min-height: 160px;
+  }
+
+  .contact-details {
+    max-width: 315px;
+  }
+
+  .contact-mini-note {
+    padding: 14px;
   }
 
   .footer-container {
