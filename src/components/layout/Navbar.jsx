@@ -1,17 +1,23 @@
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import logo from "../../assets/images/country-rose-logo.png";
 import InstagramIcon from "../ui/InstagramIcon";
 
 const navLinks = [
-    { label: "About Us", href: "/#about" },
-    { label: "Specialties", href: "/specialties" },
-    { label: "Gallery", href: "/gallery" },
-    { label: "Contact", href: "/#contact" },
+    { label: "About Us", href: "/#about", type: "anchor" },
+    { label: "Specialties", href: "/specialties", type: "route" },
+    { label: "Gallery", href: "/gallery", type: "route" },
+    { label: "Contact", href: "/#contact", type: "anchor" },
 ];
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
 
     return (
         <header className="navbar">
@@ -37,15 +43,22 @@ function Navbar() {
                         </a>
                     </div>
 
-                    <a href="/" className="navbar-logo">
-                        <img src={logo} alt="Country Rose Cakes & Candy" />
-                    </a>
+                    <Link
+                        to="/"
+                        className="navbar-logo"
+                        onClick={closeMenu}
+                    >
+                        <img
+                            src={logo}
+                            alt="Country Rose Cakes & Candy"
+                        />
+                    </Link>
 
                     <div className="navbar-actions">
                         <a
                             href="/#contact"
                             className="order-link"
-                            onClick={() => setMenuOpen(false)}
+                            onClick={closeMenu}
                         >
                             <ShoppingBag size={18} />
                             <span>Order</span>
@@ -54,7 +67,7 @@ function Navbar() {
                         <button
                             type="button"
                             className="mobile-menu-button"
-                            onClick={() => setMenuOpen(!menuOpen)}
+                            onClick={() => setMenuOpen((open) => !open)}
                             aria-label={
                                 menuOpen
                                     ? "Close navigation menu"
@@ -62,28 +75,47 @@ function Navbar() {
                             }
                             aria-expanded={menuOpen}
                         >
-                            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+                            {menuOpen ? (
+                                <X size={22} />
+                            ) : (
+                                <Menu size={22} />
+                            )}
                         </button>
                     </div>
                 </div>
             </div>
-            
-            <nav className={`navbar-links ${menuOpen ? "open" : ""}`}>
+
+            <nav
+                className={`navbar-links ${
+                    menuOpen ? "open" : ""
+                }`}
+                aria-label="Main navigation"
+            >
                 <div className="navbar-links-inner">
-                    {navLinks.map((link) => (
-                        <a
-                            key={link.label}
-                            href={link.href}
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            {link.label}
-                        </a>
-                    ))}
+                    {navLinks.map((link) =>
+                        link.type === "route" ? (
+                            <Link
+                                key={link.label}
+                                to={link.href}
+                                onClick={closeMenu}
+                            >
+                                {link.label}
+                            </Link>
+                        ) : (
+                            <a
+                                key={link.label}
+                                href={link.href}
+                                onClick={closeMenu}
+                            >
+                                {link.label}
+                            </a>
+                        )
+                    )}
 
                     <a
                         href="/#contact"
                         className="nav-order-button"
-                        onClick={() => setMenuOpen(false)}
+                        onClick={closeMenu}
                     >
                         Order Now
                     </a>

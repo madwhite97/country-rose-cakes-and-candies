@@ -3920,3 +3920,131 @@ button {
     }
   }
 }
+
+/* ====================
+  FINAL MOBILE FIXES
+==================== */
+
+@media (max-width: 600px) {
+
+  .contact-form,
+  .contact-form label,
+  .form-row {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .contact-form input[type="date"] {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .order-cta-container {
+    min-height: 470px;
+  }
+
+  .order-cta-badge {
+    top: auto;
+    right: 5px;
+    bottom: 5px;
+    width: 82px;
+    height: 82px;
+    padding: 82px;
+  }
+
+  .order-cta-badge strong {
+    font-size: 1.05rem;
+  }
+
+  .order-cta-badge span {
+    font-size: 0.38rem;
+    letter-spacing: 0.1em;
+  }
+
+  .order-cta-badge svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  
+  .order-cta-container {
+    min-height: 450px;
+  }
+
+  .order-cta-badge {
+    right: 2px;
+    bottom: 3px;
+    width: 76px;
+    height: 76px;
+  }
+
+  .order-cta-badge strong {
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================================================
+   MOBILE NAVIGATION TOUCH / LAYER FIX
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .navbar {
+    position: relative;
+    z-index: 9999;
+  }
+
+  .navbar-top {
+    position: relative;
+    z-index: 10001;
+  }
+
+  .navbar-links {
+    position: relative;
+    z-index: 10000;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  .navbar-links.open {
+    display: block;
+    pointer-events: auto;
+  }
+
+  .navbar-links-inner {
+    position: relative;
+    z-index: 10001;
+    width: 100%;
+    pointer-events: auto;
+  }
+
+  .navbar-links-inner a {
+    position: relative;
+    z-index: 10002;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mobile-menu-button {
+    position: relative;
+    z-index: 10003;
+    touch-action: manipulation;
+  }
+}
