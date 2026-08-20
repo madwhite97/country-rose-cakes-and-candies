@@ -43,24 +43,20 @@ function Hero() {
         <div className="hero-art">
           <div className="hero-photo">
             <img
-                src={heroCupcakes}
-                alt="Beautifully decorated Country Rose cupcakes"
+              src={heroCupcakes}
+              alt="Beautifully decorated Country Rose cupcakes"
             />
 
-            <div className="hero-photo-caption">
-                <span className="script">Made with love</span>
-                <small>Fresh from the Country Rose kitchen</small>
+            <div className="hero-note hero-note-top">
+              <span>♥</span>
+              <strong>Made with Love</strong>
+              <small>Fresh from the Kitchen</small>
             </div>
-          </div>
 
-          <div className="hero-note hero-note-top">
-            <Heart size={15} fill="currentColor" />
-            <span>Made with love</span>
-          </div>
-
-          <div className="hero-note hero-note-bottom">
-            <span className="script">So much</span>
-            <strong>goodness!</strong>
+            <div className="hero-note hero-note-bottom">
+              <span className="script">So much</span>
+              <strong>goodness!</strong>
+            </div>
           </div>
 
           <div className="hero-flower flower-one">✿</div>

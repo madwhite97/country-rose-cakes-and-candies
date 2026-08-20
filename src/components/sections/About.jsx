@@ -22,11 +22,6 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="about-note">
-                        <Heart size={15} fill="currentColor" />
-                        <span>Baked with love</span>
-                    </div>
-
                     <div className="about-flower about-flower-one">✿</div>
                     <div className="about-flower about-flower-two">✿</div>
                 </div>

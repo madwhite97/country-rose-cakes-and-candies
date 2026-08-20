@@ -33,16 +33,6 @@ function OrderCTA() {
                     </div>
                 </div>
 
-                <div className="order-cta-badge">
-                    <Heart size={17} fill="currentColor" />
-
-                    <span>Made with</span>
-
-                    <strong className="script">Love</strong>
-
-                    <span>by Country Rose</span>
-                </div>
-
                 <div className="order-cta-decoration order-cta-decoration-right">
                     ✿
                 </div>
