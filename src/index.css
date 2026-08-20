@@ -2167,18 +2167,19 @@ img {
     max-width: 420px;
     margin-inline: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
   }
 
   .hero-button {
-    width: auto;
-    flex: 1;
-    min-width: 0;
-    padding: 12px 14px;
-    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
   }
 
   .hero-art {
