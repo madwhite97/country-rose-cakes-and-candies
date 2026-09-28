@@ -15,10 +15,9 @@ import "./Gallery.css";
 ========================================================= */
 
 const imageModules = import.meta.glob(
-    "../assets/images/Gallery/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}",
+    ".../assets/images/Gallery/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP",
     {
         eager: true,
-        query: "?url",
         import: "default",
     }
 );
